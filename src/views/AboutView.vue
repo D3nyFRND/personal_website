@@ -1,5 +1,16 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
-  </div>
+  <Hero />
 </template>
+
+<script>
+import Hero  from "../components/heroSection/Hero.vue"
+import rightSection from "../components/rightSection/rightSection.vue";
+export default{
+  components:{
+    Hero,
+    
+  }
+}
+</script>
+
+<style></style>

@@ -1,30 +1,44 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
+  <Header />
   <router-view/>
 </template>
 
+
+<script>
+import Header from './components/header/Header.vue'
+export default{
+  components: {
+    Header,
+  }
+}
+</script>
+
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+  @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin&family=Oswald:wght@500&display=swap');
+  *{
+    font-family: 'Libre Franklin';
+  }
 
-nav {
-  padding: 30px;
-}
+  h1{
+    font-size: var(--header1);
+    font-family: 'Oswald';
+    text-transform: uppercase;
+  }
 
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
+  p{
+    font-size: var(--commonText_size);
+  }
 
-nav a.router-link-exact-active {
-  color: #42b983;
-}
+  body{
+    background-color: var(--background);
+    margin: 0;
+    min-height: 150vh;
+  }
+  :root{
+    --smallStuff: #3E92CC;
+    --background: #f9f9f9;
+    --text: #132A3E;
+    --header1: 2rem;
+    --commonText_size: 1.4rem,
+  }
 </style>
