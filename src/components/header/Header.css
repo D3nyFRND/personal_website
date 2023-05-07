@@ -1,0 +1,50 @@
+*{
+    font-family: 'Oswald';
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    background-color: var(--smallStuff);
+    padding: 2rem 1rem;
+    position: sticky;
+    top: 0;
+    color: var(--text);
+}
+
+.logo>a>*{
+    margin: 0;
+}
+.logo>a.router-link-active{
+    text-decoration: none;
+    color: var(--text);
+    cursor:auto;
+}
+
+nav{
+    font-size: var(--header1);
+}
+
+a{
+    color: var(--text);
+    transition: 0.4s;
+    text-decoration: none;
+    margin: 0 0.5rem;
+}
+a:hover{
+    color: var(--background);
+}
+a.router-link-active{
+    text-decoration: underline;
+    color: var(--background);
+}
+
+.subText{
+    font-size: var(--commonText_size);
+}
+
+
+
+  
