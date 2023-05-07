@@ -4,9 +4,9 @@
 ```
 npm install
 ```
-## Project setup
+## SASS install
 ```
-npm install
+npm install --save-dev node-sass sass-loader
 ```
 ### Compiles and hot-reloads for development
 ```
